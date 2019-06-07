@@ -95,7 +95,6 @@ app.post ('/login', (req, res, next) => {
 })
 
 
-// user [0], ეს შეიძლება შევიტანოთ რომ დაწეროს ეს ტიპი წაშალაო
 app.delete('/regUser/:id', (req, res, next) => {
     User.remove({_id: req.params.id})
     .exec()
